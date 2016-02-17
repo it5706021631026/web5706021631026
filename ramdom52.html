@@ -1,0 +1,27 @@
+<html>
+<head><title>โปรเกรมเพื่อสุ่มค่า 1-52 แบบ</title></head>
+<body>
+<?php
+  $row  = 13;
+  $column  = 4;
+  
+  echo "<table border='4' align='center' width='300'>";
+  for($r = 1; $r <= $row ; $r++){
+		echo "<tr>";
+	 
+			for($c = 1; $c <= $column ; $c++){
+				if($r == $c){	 
+					echo "<td align='center'><font color='33ff66'>";
+					echo "$r,$c</font></td>";  
+			}
+	
+		else {
+			echo "<td aligh='center'> $r,$c </td>";
+		}
+	}
+	echo "</tr>";
+	}
+	echo "</table>";
+  ?>
+</body>
+</html>
